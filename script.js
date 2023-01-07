@@ -27,27 +27,51 @@
 // var FirstName = 'Tom'; //Pascal case
 // var firstname;
 
-let name = 'John Doe';
-console.log(name);
-name = 'Steve Smith';
-console.log(name);
-
-// const name = 'John';
+// let name = 'John Doe';
+// console.log(name);
+// name = 'Steve Smith';
 // console.log(name);
 
-// const of object
-const person = {
-    name: 'John',
-    age: 30
-}
-person.name = 'Sara';
-person.age = 32;
+// // const name = 'John';
+// // console.log(name);
 
-// console.log(person)
+// // const of object
+// const person = {
+//     name: 'John',
+//     age: 30
+// }
+// person.name = 'Sara';
+// person.age = 32;
 
-// const of arrays
-const numbers = [1,2,3,4,5];
-numbers.push(6)
+// // console.log(person)
 
-console.log(numbers);
+// // const of arrays
+// const numbers = [1,2,3,4,5];
+// numbers.push(6)
+
+// console.log(numbers);
+
+
+// DATA TYPES
+// primitive
+// Reference
+// arrays
+// object literals
+// dates
+// const today = new Date();
+// console.log(today);
+
+
+// Numbers The Math Object
+const num1 = 100; 
+const num2 = 50;
+let val;
+
+//Simple math with numbers
+val = num1 + num2;
+val = num1 * num2;
+val = num1 - num2;
+val = num1 / num2;
+val = num1 % num2;
+console.log(val);
 
