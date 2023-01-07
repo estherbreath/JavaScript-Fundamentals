@@ -433,25 +433,87 @@
 
 
 // FUNCTION DECLARATIONS
-function greet(firstName = 'John', lastName = 'Doe'){
-  // console.log('Hello');
-  return 'Hello ' + firstName  + ' ' + lastName;
+// function greet(firstName = 'John', lastName = 'Doe'){
+//   // console.log('Hello');
+//   return 'Hello ' + firstName  + ' ' + lastName;
+// }
+// // console.log(greet());
+
+// //FUNCTION EXPRESSIONS
+
+// const square = function(x = 3){
+//   return x*x;
+// };
+// console.log(square());
+
+// // IMMEDIATELY INVOKABLE FUNCTION EXPRESSIONS - IIFEs
+
+// (function (){
+//   console.log('IIFE Run...');
+// })();
+
+// (function (name){
+//   console.log('Hello ' + name);
+// })('Brad');
+
+//PROPERTY METHOD
+
+const todo = {
+  add: function(){
+    console.log('Add todo..');
+  },
+  edit: function(id){
+    console.log(`Edit todo ${id}`);
+  }
 }
-// console.log(greet());
 
-//FUNCTION EXPRESSIONS
+todo.delete = function(){
+  console.log('Delete todo...');
+}
 
-const square = function(x = 3){
-  return x*x;
-};
-console.log(square());
+todo.add();
+todo.edit(22);
 
-// IMMEDIATELY INVOKABLE FUNCTION EXPRESSIONS - IIFEs
+todo.delete();
 
-(function (){
-  console.log('IIFE Run...');
-})();
+// LOOPS AND ITERATION
+// FOR LOOP
+ for(let i = 0; i <= 10; i++){
+  // console.log(i);
+  if(i ===2){
+    console.log('2 is my favorite number');
+    continue;
+  }
 
-(function (name){
-  console.log('Hello ' + name);
-})('Brad');
+  if (i === 5){
+    console.log('Stop the loop');
+    break;
+  }
+ console.log('Number ' + i);
+}
+
+// WHILE LOOP
+
+// let i = 0;
+
+while(i <= 10){
+  console.log('Number ' + i);
+  i++;
+}
+
+// DO WHILE
+
+let i = 0;
+
+do{
+  console.log('Number ' + i);
+  i++;
+}
+while(i <= 10);
+
+// LOOP THROUGH ARRAY
+const cars = ['Ford', 'Chevy', 'Honda', 'Toyota'];
+
+for(let i = 0; i < cars.length; i++){
+  console.log(cars[i]);
+}
