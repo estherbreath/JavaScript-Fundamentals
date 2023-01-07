@@ -15,17 +15,11 @@
 //     console.log('Hello world');
 // console.timeEnd('Hello');
 
-
 //Variables
-//Init var (Initailizing variables)
 var greeting;
 console.log(greeting);
 greeting = 'Hello';
 console.log(greeting);
-
-//variable can have letters, numbers, _, $
-//can not start with a number
-
 
 //Multi word vars
 var firstName = 'John'; //Camel case
