@@ -519,33 +519,92 @@
 // }
 
 //FOREACH
-cars.forEach(function(car, index, array){
-  console.log(`${index} : ${car}`);
-  console.log(array);
-});
+// cars.forEach(function(car, index, array){
+//   console.log(`${index} : ${car}`);
+//   console.log(array);
+// });
 
 
-MAP  - (Revisit)
-const users = [
-  {id: 1, name: 'John'},
-  {id: 2, name: 'Sara'},
-  {id: 3, name: 'Karen'},
-  {id: 4, name: 'Steve'}
-];
+// MAP  - (Revisit)
+// const users = [
+//   {id: 1, name: 'John'},
+//   {id: 2, name: 'Sara'},
+//   {id: 3, name: 'Karen'},
+//   {id: 4, name: 'Steve'}
+// ];
 
- const ids = users.map(function(user){
-    return user.ids;
- });
+//  const ids = users.map(function(user){
+//     return user.ids;
+//  });
 
- console.log(ids);
+//  console.log(ids);
 
-const user = {
-  firstName: 'John',
-  lastName: 'Doe',
-  age: 40
+// const user = {
+//   firstName: 'John',
+//   lastName: 'Doe',
+//   age: 40
+// }
+
+// for(let x in user){
+//   // console.log(x);
+//   console.log(`${x} : ${user[x]}`);
+// }
+
+//WINDOW METHOD / OBJECTS / PROPERTIES
+
+Alert
+alert('Hello World');
+
+Prompt
+const input = prompt();
+alert(input);
+
+Confirm
+if(confirm('Are you sure')){
+  console.log('YES');
+}else{
+  console.log('NO')
 }
 
-for(let x in user){
-  // console.log(x);
-  console.log(`${x} : ${user[x]}`);
-}
+let val;
+
+// Outer height and width
+val = window.outerHeight;
+val = window.outerWidth;
+
+//Inner height and width
+val = window.innerHeight;
+val = window.innerWidth;
+
+// Scroll points
+val = window.scrollY;
+val = window.scrollX;
+
+//Location object
+val = window.location;
+val = window.location.hostname;
+val = window.location.port;
+val = window.location.href;
+val = window.location.search;
+
+//Redirect
+window.location.href = 'http://google,com';
+//Reload
+window.location.reload();
+
+// History Object
+
+window.history.go(-1);
+val = window.history.length;
+
+// Navigator Object
+val = window.navigator; 
+val = window.navigator.appName; 
+val = window.navigator.appVersion; 
+val = window.navigator.userAgent; 
+val = window.navigator.platform; 
+val = window.navigator.vendor; 
+val = window.navigator.language; 
+
+
+console.log(val);
