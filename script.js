@@ -389,44 +389,69 @@
 
 
 // SWITCHES
-const color = 'yellow';
+// const color = 'yellow';
 
-switch(color){
-  case 'red':
-    console.log('Color is red');
-    break;
-  case 'blue':
-    console.log('Color is blue');
-    break;
-  default:
-      console.log('Color is not red or blue');
-      break;
-}
+// switch(color){
+//   case 'red':
+//     console.log('Color is red');
+//     break;
+//   case 'blue':
+//     console.log('Color is blue');
+//     break;
+//   default:
+//       console.log('Color is not red or blue');
+//       break;
+// }
 
-let day;
+// let day;
 
-switch(new Date().getDay()){
-  case 0:
-    day = 'Sunday';
-    break;
-  case 1:
-    day = 'Monday';
-    break;
-  case 2:
-     day = 'Tueday';
-     break;
-  case 3:
-      day = 'Wednesday';
-      break;
-  case 4:
-       day = 'Thursday';
-       break;
-  case 5:
-       day = 'Friday';
-       break;
-  case 6:
-      day = 'Saturday';
-      break; 
+// switch(new Date().getDay()){
+//   case 0:
+//     day = 'Sunday';
+//     break;
+//   case 1:
+//     day = 'Monday';
+//     break;
+//   case 2:
+//      day = 'Tueday';
+//      break;
+//   case 3:
+//       day = 'Wednesday';
+//       break;
+//   case 4:
+//        day = 'Thursday';
+//        break;
+//   case 5:
+//        day = 'Friday';
+//        break;
+//   case 6:
+//       day = 'Saturday';
+//       break; 
    
+// }
+// console.log(`Today is ${day}`);
+
+
+// FUNCTION DECLARATIONS
+function greet(firstName = 'John', lastName = 'Doe'){
+  // console.log('Hello');
+  return 'Hello ' + firstName  + ' ' + lastName;
 }
-console.log(`Today is ${day}`);
+// console.log(greet());
+
+//FUNCTION EXPRESSIONS
+
+const square = function(x = 3){
+  return x*x;
+};
+console.log(square());
+
+// IMMEDIATELY INVOKABLE FUNCTION EXPRESSIONS - IIFEs
+
+(function (){
+  console.log('IIFE Run...');
+})();
+
+(function (name){
+  console.log('Hello ' + name);
+})('Brad');
