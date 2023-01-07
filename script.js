@@ -227,75 +227,138 @@
 
 
 
-//OBJECT LITERALS
- const person = {
-    firstNme: 'Steve',
-    lastName: 'Smith',
-    age: 30,
-    email: 'steve@aol.com',
-    hobbies: ['music', 'sport'],
-    address: {
-      city: 'Miami',
-      state: 'FL'
-    },
-    getBirthYear: function(){
-      return 2017 - this.age;
-    }
+ //OBJECT LITERALS
+//  const person = {
+//     firstNme: 'Steve',
+//     lastName: 'Smith',
+//     age: 30,
+//     email: 'steve@aol.com',
+//     hobbies: ['music', 'sport'],
+//     address: {
+//       city: 'Miami',
+//       state: 'FL'
+//     },
+//     getBirthYear: function(){
+//       return 2017 - this.age;
+//     }
 
- }
+//  }
 
- let val;
+//  let val;
 
- val = person;
- //Get specific value
- val = person.firstNme;
- val = person['firstNme'];
- val = person.age;
- val = person.hobbies[1];
- val = person.address.state;
- val = person.address['city'];
- val = person.getBirthYear();
-
-console.log(val);
-
-const people = [
-  {name: 'John', age: 30},
-  {name: 'Mike', age: 23},
-  {name: 'Nancy', age: 40}
-];
-
-for(let i = 0; i < people.length; i++){
-  console.log(people[i].name);
-}
-  
-// let val;
-
-const today = new Date();
-let birthday = new Date('9-10-1981 11:25:00');
-birthday = new Date('September 10 1981');
-birthday = new Date('9/10/1981');
-
-val = today.getMonth();//it is 0 based
-val = today.getDate();
-val = today.getDay();
-val = today.getFullYear();
-val = today.getHours();
-val = today.getMinutes();
-val = today.getSeconds();
-val = today.getMilliseconds();
-val = today.getTime();
-
-birthday.setMonth(2);
-birthday.setDate(12);
-birthday.setFullYear(1985);
-birthday.setHours(3);
-birthday.setMinutes(30);
-birthday.setTime(10);
-
-
-// val = today;
-// val = birthday;
+//  val = person;
+//  //Get specific value
+//  val = person.firstNme;
+//  val = person['firstNme'];
+//  val = person.age;
+//  val = person.hobbies[1];
+//  val = person.address.state;
+//  val = person.address['city'];
+//  val = person.getBirthYear();
 
 // console.log(val);
-console.log(birthday);
+
+// const people = [
+//   {name: 'John', age: 30},
+//   {name: 'Mike', age: 23},
+//   {name: 'Nancy', age: 40}
+// ];
+
+// for(let i = 0; i < people.length; i++){
+//   console.log(people[i].name);
+// }
+  
+// // let val;
+
+// const today = new Date();
+// let birthday = new Date('9-10-1981 11:25:00');
+// birthday = new Date('September 10 1981');
+// birthday = new Date('9/10/1981');
+
+// val = today.getMonth();//it is 0 based
+// val = today.getDate();
+// val = today.getDay();
+// val = today.getFullYear();
+// val = today.getHours();
+// val = today.getMinutes();
+// val = today.getSeconds();
+// val = today.getMilliseconds();
+// val = today.getTime();
+
+// birthday.setMonth(2);
+// birthday.setDate(12);
+// birthday.setFullYear(1985);
+// birthday.setHours(3);
+// birthday.setMinutes(30);
+// birthday.setTime(10);
+
+
+// // val = today;
+// // val = birthday;
+
+// // console.log(val);
+// console.log(birthday);
+
+
+// If statements Comparison Operators
+// if(something){
+//   do something
+// } else {
+//   do something else
+// }
+
+const id = 100;
+
+// EQUAL TO
+if(id == 101){
+  console.log('CORRECT');
+}else {
+  console.log('INCORRECT');
+}
+
+//NOT EQUAL TO
+if(id != 101){
+  console.log('CORRECT');
+}else {
+  console.log('INCORRECT');
+}
+
+//EQUAL TO VALUE & TYPE  more suitable
+if(id === 101){
+  console.log('CORRECT');
+}else {
+  console.log('INCORRECT');
+}
+
+if(id !== 101){
+  console.log('CORRECT');
+}else {
+  console.log('INCORRECT');
+}
+
+// Test if undefined
+if(typeof id !== 'undefined'){
+  console.log(`The ID is ${id}`);
+
+}else {
+  console.log(`NO ID`)
+}
+
+// GREATER OR LESS THAN <= >=
+if(id > 200){
+    console.log('CORRECT');
+  }else {
+    console.log('INCORRECT');
+  }
+
+// iF ELSE
+const color = 'yellow';
+
+if(color === 'red'){
+  console.log('Color is red');
+}else if(color === 'blue'){
+  console.log('color is blue');
+}else{
+  console.log('color is not red or blue');
+}
 
